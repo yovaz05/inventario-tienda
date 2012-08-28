@@ -271,6 +271,11 @@ public class Principal extends javax.swing.JFrame {
 
         btnEmpresa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/datos.png"))); // NOI18N
         btnEmpresa.setText("Empresa");
+        btnEmpresa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEmpresaActionPerformed(evt);
+            }
+        });
 
         panelSeguridad.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Seguridad", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
@@ -307,7 +312,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(panelConfLayout.createSequentialGroup()
                 .addGap(68, 68, 68)
                 .addComponent(btnEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 208, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 212, Short.MAX_VALUE)
                 .addComponent(panelSeguridad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(104, 104, 104))
         );
@@ -321,7 +326,7 @@ public class Principal extends javax.swing.JFrame {
                     .addGroup(panelConfLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(panelSeguridad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         tsMenu.addTab("Configuraciones", panelConf);
@@ -499,6 +504,14 @@ public class Principal extends javax.swing.JFrame {
         }
         ultimoFondo=fil;
     }//GEN-LAST:event_btnFondoActionPerformed
+
+    private void btnEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmpresaActionPerformed
+        // TODO add your handling code here:
+       Empresa dialog = new Empresa(new javax.swing.JFrame(), true);
+       dialog.pack();   
+       dialog.setLocationRelativeTo(null);
+       dialog.setVisible(true);
+    }//GEN-LAST:event_btnEmpresaActionPerformed
 
     /**
      * @param args the command line arguments
