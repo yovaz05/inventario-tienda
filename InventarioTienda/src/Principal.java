@@ -281,6 +281,11 @@ public class Principal extends javax.swing.JFrame {
 
         btnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/usuarios.png"))); // NOI18N
         btnUsuarios.setText("Usuarios");
+        btnUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuariosActionPerformed(evt);
+            }
+        });
 
         btnBackUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/back-up.jpg"))); // NOI18N
         btnBackUp.setText("Back Up");
@@ -512,6 +517,13 @@ public class Principal extends javax.swing.JFrame {
        dialog.setLocationRelativeTo(null);
        dialog.setVisible(true);
     }//GEN-LAST:event_btnEmpresaActionPerformed
+
+    private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
+        // TODO add your handling code here:
+        tablaUsuario tu= new tablaUsuario();
+        tu.setVisible(true);
+        tu.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
