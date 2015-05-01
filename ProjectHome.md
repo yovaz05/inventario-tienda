@@ -1,0 +1,1 @@
+Este proyecto tiene como objetivo realizar un Sistema Informatico para el control de inventario y facturacion de la tienda Juan Carlos, en la ciudad de cojutepeque Cuscatlan, El Salvador
